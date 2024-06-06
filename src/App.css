@@ -1,0 +1,1526 @@
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Satoshi', sans-serif;
+}
+
+body {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  isolation: isolate;
+}
+
+header {
+  box-shadow: 0px 4px 38.2px -8px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 30px 30px;
+  background-color: white;
+  width: 100%;
+  padding: 16px;
+}
+.brand-logo_btnWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1596px;
+  margin: 0 auto;
+}
+.btn-getInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: #292967;
+  border-radius: 27px;
+  text-decoration: none;
+  width: 120px;
+  height: 54px;
+}
+.brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.brand-logo hr {
+  display: block;
+  height: 50px;
+  width: 2px;
+  border-radius: 2px;
+  background: #181972;
+  outline: none;
+  border: none;
+}
+#hero-section {
+  background-image: url("https://captaincsgo.sirv.com/Group%20918.png");
+  background-position: center;
+  width: 100%;
+  height: 1190px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-section_formWrapper {
+  width: 100%;
+  max-width: 399px;
+  box-shadow: 0px 4px 4px 0px #DEF0FF;
+  background-color: white;
+  border-radius: 17px;
+  overflow: hidden;
+}
+.form-heading {
+  width: 100%;
+  padding: 14.35px 0px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #292967;
+  background: #FDDF49;
+}
+.main-form {
+  padding: 27px 32px 32px;
+}
+.btn-EnquireNow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 129px;
+  margin: 0 auto;
+  background-color: #292967;
+  border-radius: 22px;
+  height: 43px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+label {
+  color: #000000;
+  font-size: 13.22px;
+  font-weight: 400;
+  line-height: 17.85px;
+}
+.academic-year {
+  width: 220px;
+  padding: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: #292967;
+  color: white;
+}
+.academic-year_Wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.relationship-withChild_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.relationship-withChildMainLabel {
+  width: 90px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.relationship-withChildLabel {
+  position: relative;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 2em;
+  overflow: hidden;
+  width: 100%;
+
+}
+
+input[type="radio"]:checked + .relationship-withChildLabel {
+  background-color: #292967;
+  color: #ffffff;
+}
+.relationship-withChildRadioButtonWrapper {
+  width: 220px;
+  display: flex;
+  border: 0.83px solid #DADADA;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.childs-firstlastname-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.childs-firstlastname-wrapper input {
+  border: 0.83px solid #DADADA;
+  width: 159.58px;
+  border-radius: 3.31px;
+  height: 41px;
+  outline: none;
+  padding-left: 11px;
+}
+.childs-firstname-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  width: 159px;
+}
+.childs-lastname-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  width: 159px;
+}
+
+.parents-firstlastname-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.parents-firstlastname-wrapper input {
+  border: 0.83px solid #DADADA;
+  width: 159.58px;
+  border-radius: 3.31px;
+  height: 41px;
+  outline: none;
+  padding-left: 11px;
+}
+.parents-firstname-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  width: 159px;
+}
+.parents-lastname-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  width: 159px;
+}
+.course-applying {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  margin-bottom: 18px;
+}
+.course-applying select {
+  outline: none;
+  border: 0.83px solid #DADADA;
+  border-radius: 3.31px;
+  height: 41px;
+  outline: none;
+  padding-left: 11px;
+}
+.mobile-number {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  margin-bottom: 18px;
+}
+.mobile-number-inputWrapper {
+  position: relative;
+  width: 100%;
+}
+.mobile-number-inputWrapper input {
+  width: 100%;
+  border: 0.83px solid #DADADA;
+  border-radius: 3.31px;
+  height: 41px;
+  outline: none;
+  padding-left: 60px;
+}
+.country-code {
+  display: block;
+  width: fit-content;
+  position: absolute;
+  color: #757575;
+  top: 12px;
+  left: 12px;
+  border-right: 1px solid;
+  padding-right: 10px;
+}
+.email-address {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5px;
+  margin-bottom: 18px;
+}
+.email-address input {
+  width: 100%;
+  border: 0.83px solid #DADADA;
+  border-radius: 3.31px;
+  height: 41px;
+  outline: none;
+  padding-left: 11px;
+}
+.batch-starts-scholarship-tests-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.batch-starts-from {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.batch-starts-from p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.3px;
+  text-transform: uppercase;
+  width: 188px;
+}
+.scholarship-test {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.scholarship-test p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.3px;
+  text-transform: uppercase;
+  width: 188px;
+}
+.batch-starts-scholarship-tests-wrapper {
+  margin-top: 53px;
+}
+.admissions-open-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 27px;
+  margin-top: 41px;
+}
+.admissions-open-wrapper p {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.4px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.admissions-open-EnquireNowBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  height: 54px;
+  background-color:#292967;
+  border-radius: 27px;
+  color: white;
+  text-decoration: none;
+  gap:24px;
+}
+.hero-section-left {
+  width: 100%;
+  max-width: 596px;
+}
+.powered-by-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+.powered-by-wrapper p {
+  font-size: 18.33px;
+  font-weight: 900;
+  line-height: 24.75px;
+  color:#292967;
+}
+.kickstart-your-text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.4px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.hero-section-left h1 {
+  font-size: 45px;
+  font-weight: 900;
+  line-height: 67.5px;
+  text-align: left;
+  color:#292967;
+}
+.hero-section-left-form_wrapper {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 72px;
+}
+.learning-approach-wrapper {
+  bottom: -110px;
+  background-image: url("https://captaincsgo.sirv.com/Group%201094.png");
+  width: 100%;
+  max-width: 1600px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  margin: 0 auto;
+  position: relative;
+  isolation: isolate;
+  z-index: 3;
+}
+.our-approachtop-arrow {
+  position: absolute;
+  left: 48.9%;
+  top: -16px;
+  z-index: 2;
+}
+.learning-approach-headingwrapper {
+  padding-top: 37px;
+}
+.learning-approach-wrapper-OurText {
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 32.4px;
+}
+.learning-approach-wrapper h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height:1;
+  color: #FDDF49;
+  text-align: center;
+}
+.learning-approach-btnEnquireNow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 185px;
+  height: 54px;
+  background-color: #FDDF49;
+  color: #292967;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 24px;
+  text-decoration: none;
+  border-radius: 27.08px;
+  margin: 26px auto 0;
+}
+.learning-approach-PointsWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.learning-approach-IndividualPoints {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 290px;
+  gap: 18px;
+  border-right: 2px solid white;
+  border-right-style: dotted;
+  padding: 0px 51px;
+}
+.learning-approach-IndividualPoints:last-child {
+  border-right: none;
+}
+.learning-approach-IndividualPoints p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  color: white;
+}
+.hero-section-studenentsimage {
+  position: relative;
+  bottom: -114px;
+}
+#second-section {
+  width: 100%;
+  max-width: 1225px;
+  margin: 320px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.about-universal-highschool {
+  background: #FFF9DA;
+  border-radius: 33px;
+  width: 100%;
+  max-width: 1017px;
+  height: 566px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 118px;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+}
+.about-universal-highschool::after {
+  display: block;
+  position: absolute;
+  left: -209px;
+  bottom: 93px;
+  content: "";
+  width: 526px;
+  height: 350px;
+  background-color: #FDDF49;
+  z-index: -1;
+  border-radius: 22px;
+}
+.about-universal-highschool::before {
+  display: block;
+  position: absolute;
+  left: -210px;
+  content: "";
+  width: 513px;
+  height: 350px;
+  background-image: url("https://captaincsgo.sirv.com/Screenshot%202024-02-21%20193951%201.png");
+}
+.about-iitpace {
+  background: #6767C826;
+  width: 100%;
+  border-radius: 33px;
+  max-width: 1017px;
+  height: 566px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 118px;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+}
+.about-iitpace::after {
+  display: block;
+  position: absolute;
+  right: -222px;
+  bottom: 93px;
+  content: "";
+  width: 526px;
+  height: 350px;
+  background-color: #292967;
+  z-index: -1;
+  border-radius: 22px;
+}
+.about-iitpace::before {
+  display: block;
+  position: absolute;
+  right: -210px;
+  content: "";
+  width: 513px;
+  height: 350px;
+  background-image: url("https://captaincsgo.sirv.com/Rectangle%20739.png");
+}
+.about-universal-highschool-yellow {
+  width: 518px;
+}
+.about-universal-highschool-yellow span {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.4px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.about-universal-highschool-yellow h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48.6px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+  color: #292967;
+}
+.about-universal-highschool-yellow p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.about-universal-highschool-purple {
+  width: 518px;
+}
+
+.about-universal-highschool-purple span {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.4px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.about-universal-highschool-purple h4 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48.6px;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+  color: #292967;
+}
+.about-universal-highschool-purple p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.about-universal-highschool-imagewrapper {
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  left: 200px;
+}
+
+.about-universal-highschool-imagewrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #FDDF49;
+  border-radius: 25px;
+  z-index: -1;
+  top: 10px;
+  left: 10px;
+
+}
+.about-iitpace-imagewrapper {
+  display: flex;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  right: 200px;
+}
+
+.about-iitpace-imagewrapper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #292967;
+  border-radius: 25px;
+  z-index: -1;
+  top: 10px;
+  left: 10px;
+
+}
+.second-section-1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.second-section-2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#third-section {
+  margin-top: 80px;
+  width: 100%;
+  padding: 0px 16px;
+}
+.third-section-heading span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.4px;
+  text-align: center;
+
+}
+.third-section-heading h5 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48.6px;
+  text-align: center;
+  color: #292967;
+}
+.third-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: column;
+}
+.our-programs-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  gap: 85px;
+  flex-wrap: wrap;
+}
+.isc-neet-program {
+  background: #FFF9DA;
+  width: 100%;
+  max-width: 750px;
+  border-radius: 33px;
+  padding: 0px 37px 0px;
+}
+.isc-neet-program > .admissions-open-EnquireNowBtn{
+  margin: 0 auto;
+  position: relative;
+  bottom: -47px;
+}
+.isc-neet-program p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: center;
+}
+.isc-iit-jee-program {
+  background: #6767C826;
+  width: 100%;
+  max-width: 750px;
+  border-radius: 33px;
+  padding: 0px 37px 0px;
+}
+.isc-iit-jee-program  > .admissions-open-EnquireNowBtn{
+  margin: 0 auto;
+  position: relative;
+  bottom: -29px;
+}
+.isc-iit-jee-program p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: center;
+}
+.program-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+.isc-neet-program-heading {
+  width: 421px;
+  height: 89px;
+  margin: 0 auto;
+  background-color: #292967;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.4px;
+  text-align: left;
+  color: white;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
+  top: -25px;
+}
+.isc-iit-jee-program-heading {
+  width: 421px;
+  height: 89px;
+  margin: 0 auto;
+  background-color: #292967;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.4px;
+  text-align: left;
+  color: white;
+  border-radius: 30px 30px 0px 0px;
+  position: relative;
+  top: -25px;
+}
+#fourth-section {
+  margin-top: 160px;
+  position: relative;
+  padding-bottom: 78px;
+}
+#fourth-section::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  background-image: url("https://captaincsgo.sirv.com/Group%201098.png");
+  height: 261px;
+  bottom: 0;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tab-switch-div {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  box-shadow: 2px 4px 5px 0px #FFFFFF40 inset;
+  padding: 60px 85px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+}
+.tab-switch-div-LeftInfo {
+  width: 100%;
+  max-width: 750px;
+}
+.tab-switch-div-LeftInfo span{
+  margin-bottom: 28px;
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  text-align: left;
+  color: #292967;
+}
+.tab-switch-div-LeftInfo p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  margin-bottom: 44px;
+}
+
+
+.tab-options-radio {
+  display: none;
+}
+.tab-options {
+  position: relative;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  padding: 16px 24px;
+  background-color: #E8E8F7;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  border-radius: 30px 30px 0px 0px;        }
+
+
+.tab-options-radio:checked + .tab-options {
+  background-color: #292967;
+  color: #ffffff;
+  border-radius: 30px 30px 0px 0px;
+}
+.tab-switch-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 12px;
+  padding: 0px 16px;
+  position: relative;
+  top: 22px;
+}
+#fifth-section {
+  padding: 42px 16px 128px;
+}
+.successs-stories-heading {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto 34px;
+}
+.successs-stories-heading > p > span {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.4px;
+  display: block;
+}
+.successs-stories-heading > p {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48.6px;
+  color: #292967;
+}
+.successs-stories-carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  width: 100%;
+}
+.our-campus-heading {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto ;
+}
+
+.our-campus-heading > p > span {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.4px;
+  color: white;
+  display: block;
+}
+.our-campus-heading > p {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48.6px;
+  color: #FDDF49;
+}
+#sixth-section {
+  width: 100%;
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  padding-bottom: 106px;
+  padding-top: 58px;
+}
+#sixth-section::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 300px;
+  background-image: url("https://captaincsgo.sirv.com/Group%201099.png");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+}
+.our-campus-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 38px;
+}
+.our-campus-heading > .admissions-open-EnquireNowBtn {
+  background-color: #FDDF49;
+  color: #292967;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+#seventh-section {
+  width: 100%;
+  background: linear-gradient(84.42deg, #000000 -67.71%, #292967 60.53%);
+  padding: 25px 16px;
+}
+.address-map-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 141px;
+  flex-wrap: wrap;
+}
+.school-name {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 43.2px;
+  color: #FDDF49;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.school-name > span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32.4px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+
+}
+.school-address-details-div .admissions-open-EnquireNowBtn {
+  background-color: #FDDF49;
+  color: #292967;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+.address-div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.address-text p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: #FFFFFF;
+}
+.address-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.3px;
+  text-align: left;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 8px;
+}
+.admission-inquiry-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.3px;
+  text-align: left;
+  color: #FFFFFF;
+  display: block;
+  margin-bottom: 8px;
+}
+.school-phone-number {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.admission-email-address {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  color: #FFFFFF;
+  text-decoration: none;
+
+}
+.admission-inquiry {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.phone-number-email-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.phone-number-email-wrapper hr {
+  display: block;
+  height: 22px;
+  width: 2px;
+  border-radius: 2px;
+  background: #FDDF49;
+  outline: none;
+  border: none;
+}
+footer {
+  width: 100%;
+  background-color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 25px 16px;
+}
+.mobile-view-image1 , .mobile-view-image2 {
+  display: none;
+}
+.tab-switch-mobileview {
+  display: none;
+}
+.admissions-open-EnquireNowBtnMobileView, .admissions-open-EnquireNowBtnSixthSectionMobileView {
+  display: none;
+}
+@media (max-width : 1200px) {
+  .hero-section-left-form_wrapper {
+      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      padding: 16px;
+  }
+  .hero-section-studenentsimage {
+      bottom: 0px;
+      grid-row: 2;
+      grid-column: 1 / 3;
+  }
+  #hero-section {
+      height: 100%;
+  }
+  .hero-section-left {
+      width: 100%;
+      max-width: 596px;
+  }
+  .learning-approach-wrapper {
+      bottom: 0;
+  }
+  .learning-approach-Mainwrapper {
+      padding: 0px 16px;
+  }
+  .admissions-open-wrapper {
+      justify-content: center;
+  }
+  .batch-starts-scholarship-tests-wrapper {
+      align-items: center;
+  }
+  #second-section {
+      padding: 0px 16px;
+  }
+  .about-iitpace {
+      padding-left: 30px;
+  }
+  .about-universal-highschool {
+      padding-right: 30px;
+  }
+  .about-universal-highschool::before {
+      left: -100px;
+  }
+  .about-universal-highschool::after {
+      left: -100px;
+  }
+  .about-iitpace::before {
+      right: -100px;
+  }
+  .about-iitpace::after {
+      right: -100px;
+  }
+  .our-campus-image {
+      width: 100%;
+      padding: 0px 16px;
+  }
+  .our-campus-image img {
+      width: 100%;
+  }
+  .our-campus-heading {
+      padding: 0px 16px;
+  }
+  
+}
+@media (max-width : 500px) {
+  .brand-logo img:nth-child(1) {
+      width: 146px;
+      height: 20px;
+  }
+  .brand-logo img:nth-child(3)  {
+      width: 49px;
+      height: 27px;
+  }
+  .brand-logo {
+      gap: 11px;
+  }
+  .brand-logo hr {
+      height: 28px;
+  }
+  .btn-getInfo {
+      font-size: 14px;
+      width: 88px;
+      height: 36px;
+  }
+  .hero-section-left-form_wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      padding: 0px 9px;
+  }
+  .kickstart-your-text {
+      text-align: center  ;
+      font-size: 16px;
+  }
+  .hero-section-left h1 {
+      text-align: center;
+      font-size: 32px;
+      color: #191970;
+      font-size: 27px;
+      font-weight: 700;
+      line-height: 44.45px;
+      letter-spacing: 0.05em;
+
+  }
+  .powered-by-wrapper p {
+      font-size: 14px;
+  }
+  .powered-by-wrapper img {
+      width: 72px;
+      height: 40px;
+  }
+  .admissions-open-wrapper {
+      display: none;
+  }
+  .batch-starts-from p, .scholarship-test p {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16.2px;
+  }
+  .batch-starts-from , .scholarship-test {
+      gap: 8px;
+      width: 165px;
+  }
+  .batch-starts-from img, .scholarship-test img {
+      width: 32px;
+      height: 32px;
+  }
+  .batch-starts-scholarship-tests-wrapper {
+      flex-direction: row;
+      justify-content: center;
+  }
+  .hero-section-studenentsimage {
+      width: 282px;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 24px auto 0;
+  }
+  .hero-section-studenentsimage img {
+      width: 100%;
+  }
+
+  .learning-approach-wrapper {
+      bottom: 0;
+  }
+  .learning-approach-PointsWrapper {
+      flex-wrap: wrap;
+      gap: 30px;
+  }
+
+  .learning-approach-IndividualPoints {
+      border: none;
+      padding: 0;
+      max-width: 160px;
+  }
+  .our-approachtop-arrow { 
+      display: none;
+  }
+  .learning-approach-Mainwrapper {
+      padding: 0px 9px;
+  }
+  .learning-approach-wrapper {
+      height: 100%;
+      border-radius: 15px;
+      padding-bottom: 32px;
+  }
+  .childs-firstname-wrapper {
+      width: 148px;
+  }
+  .childs-lastname-wrapper {
+      width: 148px;
+  }
+  .parents-firstname-wrapper, .parents-lastname-wrapper {
+      width: 148px;
+  }
+  .childs-firstlastname-wrapper input {
+      width: 100%;
+  }
+  .parents-firstlastname-wrapper input {
+      width: 100%;
+  }
+  .learning-approach-wrapper-OurText {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.6px;
+      display: block;
+      margin-bottom: 10px;
+  }
+  .learning-approach-headingwrapper {
+      padding-top: 32px;
+  }
+  .learning-approach-wrapper h2 {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 40.5px;
+  }
+  .learning-approach-IndividualPoints img {
+      width: 60px;
+      height: 60px;
+  }
+  .learning-approach-IndividualPoints p {
+      font-size: 12.12px;
+      font-weight: 700;
+      line-height: 16.36px;
+      text-align: center;
+  }
+  
+  #second-section {
+      margin: 20px auto 0px;
+      padding: 0px 9px;
+      gap: 0;
+  }
+  #hero-section {
+      height: 100%;
+  }
+  .about-universal-highschool {
+      padding: 26px 19px 98px;
+      height: 100%;
+  }
+  .about-universal-highschool::before {
+      display: none;
+  }
+  .about-universal-highschool::after {
+      display: none;
+  }
+  .second-section-1 {
+      flex-direction: column;
+  }
+  .about-universal-highschool-yellow {
+      width: 100%;
+  }
+  .about-universal-highschool-yellow span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.6px;
+      text-align: center;
+      display: block;
+  }
+  .about-universal-highschool-yellow h3 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 43.2px;
+      text-align: center;
+  }
+  .about-universal-highschool-yellow p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.6px;
+      text-align: center;
+  }
+  .about-universal-highschool-yellow > .admissions-open-EnquireNowBtn {
+      margin: 0 auto;
+  }
+  .mobile-view-image1 {
+      display: flex;
+      position: relative;
+      top: -70px;
+      z-index: 32;
+  }
+  .mobile-view-image2 {
+      display: flex;
+      position: relative;
+      top: -70px;
+      z-index: 32;
+  }
+  .about-iitpace::before, .about-iitpace::after {
+      display: none;
+  }
+  .about-iitpace {
+      padding: 26px 19px 98px;
+      height: 100%;
+  }
+  .second-section-2 {
+      flex-direction: column;
+  }
+  .about-universal-highschool-purple > .admissions-open-EnquireNowBtn  {
+      margin: 0 auto;
+  }
+  .about-universal-highschool-purple span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.6px;
+      text-align: center;
+      display: block;
+  }
+  .about-universal-highschool-purple h4 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 43.2px;
+      text-align: center;
+  }
+  .about-universal-highschool-purple p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.6px;
+      text-align: center;
+  }
+
+  .third-section-heading span {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32.4px;
+      text-align: center;
+  }
+  .third-section-heading h5 {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 48.6px;
+      text-align: center;
+  }
+  .isc-neet-program-heading ,.isc-iit-jee-program-heading {
+      width: 262px;
+      height: fit-content;
+      padding: 28px 0px;
+      top: -20px;
+  }
+  .our-programs-wrapper {
+      margin-top: 30px;
+  }
+  .isc-neet-program p, .isc-iit-jee-program p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.6px;
+      text-align: center;
+  }
+  .isc-neet-program > .admissions-open-EnquireNowBtn {
+      bottom: -28px;
+  }
+  #third-section {
+      margin-top: 0px;
+  }
+  .tab-switch-div {
+      flex-direction: column;
+      padding: 37px 22px ;
+  }
+  #fourth-section {
+      margin-top: 30px;
+      padding: 0px 18px 57px;
+  }
+  #fourth-section::after {
+      left: 0;
+  }
+  .tab-switch-Webview {
+      display: none;
+  }
+  .tab-switch-mobileview{
+      width: 100%;
+      display: flex;
+  }
+  .tab-switch-div-LeftInfo p {
+      text-align: center;
+      margin-bottom: 22px;
+  }
+  .tab-switch-div-LeftInfo .admissions-open-EnquireNowBtn {
+      margin: 0 auto;
+  }
+  .tab-switch-div-LeftInfo span {
+      margin-bottom: 9px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 21.6px;
+      text-align: center;
+  }
+  .tab-switch-options {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+  }
+  .tab-options {
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 18.9px;
+      text-align: center;
+      width: 155px;
+      justify-content: center;
+      padding: 16px 10px;
+  }
+  .successs-stories-heading .admissions-open-EnquireNowBtn {
+      display: none;
+  }
+  .admissions-open-EnquireNowBtnMobileView {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 185px;
+      height: 54px;
+      background-color:#292967;
+      border-radius: 27px;
+      color: white;
+      text-decoration: none;
+      gap:24px;
+      margin: 24px auto 0;
+  }
+  .successs-stories-heading > p > span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.6px;
+      text-align: left;
+  }
+  .successs-stories-heading > p {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 43.2px;
+      text-align: left;
+  }
+  .admissions-open-EnquireNowBtnSixthSectionMobileView {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 185px;
+      height: 54px;
+      background-color:#292967;
+      border-radius: 27px;
+      color: white;
+      text-decoration: none;
+      gap:24px;
+      margin: 24px auto 0;
+  }
+  .our-campus-heading .admissions-open-EnquireNowBtn {
+      display: none;
+  }
+  .our-campus-heading {
+      justify-content: center;
+      align-items: center;
+  }
+  .our-campus-heading > p > span {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.6px;
+      display: block;
+      text-align: center;
+  }
+  .our-campus-heading > p {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 43.2px;
+  }
+  .our-campus-image {
+      padding: 16px;
+  }
+  .our-campus-image img {
+      width: 100%;
+  }
+  .address-map-div img {
+      width: 100%;
+  }
+  .address-map-div {
+      gap: 37px;
+  }
+  .school-address-details-div .admissions-open-EnquireNowBtn {
+      margin: 0 auto;
+  }
+  .phone-number-email-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6px;
+  }
+  .phone-number-email-wrapper hr {
+      display: block;
+      height: 2px;
+      width: 22px;
+      border-radius: 2px;
+      background: #FDDF49;
+      outline: none;
+      border: none;
+  }
+  .address-div > img, .admission-inquiry > img {
+      width: 35px;
+      height: 35px;
+  }
+  .successs-stories-carousel-wrapper {
+      flex-direction: column;
+  }
+}
